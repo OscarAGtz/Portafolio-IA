@@ -8356,6 +8356,17 @@ MSE test= 1278.414945946573
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Sesgo-y-varianza">Sesgo y varianza<a class="anchor-link" href="#Sesgo-y-varianza">¶</a></h3><p>En la gráfica de error contra tamaño de subconjunto se puede observar que cuando el tamaño de subconjunto es de 2, el sesgo es demasiado grande puesto que el modelo se ajusta solamente a esos dos puntos, dando como resultado un modelo que tiene mucho error en los datos de validación. El resto de los modelos tienen menos sesgo y por lo tanto menos error, por debajo de 1100, sin embargo, hay mucha varianza entre ellos ya que se tiene un rango de error 200 hasta 1050, además de que la desviación estandar de los errores para cada tamaño de subconjunto de entrenamiento también es considerable, esto significa que el cambio en la selección aleatoria de datos influye significativamente en el desempeño (varianza alta). Esto quiere decir que la complejidad o parámetros del modelo deberían cambiarse.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Ajustes-obtenidos">Ajustes obtenidos<a class="anchor-link" href="#Ajustes-obtenidos">¶</a></h3><p>En el caso del modelo que utiliza 2 elementos para entrenar se tiene un modelo con underfit, puesto que el error es demasiado grande y no logra hacer predicciones adecuadamente. Por otro lado, cuando tenemos muchos elementos es probable que el modelo no generalice bien y no obtenga buenas soluciones para datos no vistos, esto quiere decir que el modelo sufre de overfit. A lo largo de todos los modelos se tiene un error relativamente grande, esto puede ser debido a que los parámetros seleccionados para entrenar los modelos no son los mejores.</p>
 <p>Con estas condiciones, el modelo que tiene menor error y menor variación es el que utiliza 5 muestras para entrenamiento.</p>
 </div>
